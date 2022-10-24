@@ -1,2 +1,11 @@
 @forward 'reset';
-@forward 'fonts';
+@forward 'font';
+@forward 'var';
+
+p {
+    color: red;
+}
+
+h1 {
+    color: green;
+}

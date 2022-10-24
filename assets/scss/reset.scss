@@ -13,9 +13,49 @@ html, body {
 	float: left;
 }
 
+body {
+	font-family: var(--main-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--heading-font);
+	line-height: 1.33;
+	letter-spacing: -2px;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
 button {
-	background-color: transparent;
+	background-color: var(--accent-color);
+	color: var(--main-color);
+	padding: 16px 48px;
 	cursor: pointer;
+
+	&:hover {
+		background-color: #edc14a;
+	}
 }
 
 input[type="radio"],
@@ -39,11 +79,6 @@ a {
 
 dl, ol, ul, li {
 	list-style-type: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-	padding: 0;
 }
 
 [class*="__container"] {
