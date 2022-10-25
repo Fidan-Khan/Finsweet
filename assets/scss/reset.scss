@@ -5,6 +5,8 @@
 	border-radius: 0;
 	border: 0;
 	outline: none;
+	font-family: Sen;
+	font-weight: normal;
 }
 
 html, body {
@@ -13,12 +15,8 @@ html, body {
 	float: left;
 }
 
-body {
-	font-family: var(--main-font);
-}
-
 h1, h2, h3, h4, h5, h6 {
-	font-family: var(--heading-font);
+	font-weight: bold;
 	line-height: 1.33;
 	letter-spacing: -2px;
 }
@@ -50,6 +48,9 @@ h6 {
 button {
 	background-color: var(--accent-color);
 	color: var(--main-color);
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.33;
 	padding: 16px 48px;
 	cursor: pointer;
 

@@ -1,3 +1,30 @@
+@font-face {
+  font-family: "Sen";
+  src: url("fonts/Sen-Bold.eot");
+  src: url("fonts/Sen-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Sen-Bold.woff2") format("woff2"), url("fonts/Sen-Bold.woff") format("woff"), url("fonts/Sen-Bold.ttf") format("truetype"), url("fonts/Sen-Bold.svg#Sen-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sen";
+  src: url("fonts/Sen-Regular.eot");
+  src: url("fonts/Sen-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Sen-Regular.woff2") format("woff2"), url("fonts/Sen-Regular.woff") format("woff"), url("fonts/Sen-Regular.ttf") format("truetype"), url("fonts/Sen-Regular.svg#Sen-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --main-color: #232536;
+  --accent-color: #ffd050;
+  --text-color1: #4c4c4c;
+  --text-color2: #6d6e76;
+  --text-color2: #592ea9;
+  --block-color1: #f4f4f4;
+  --block-color2: #f4f0f8;
+  --block-color3: #fbf6ea;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -5,6 +32,8 @@
   border-radius: 0;
   border: 0;
   outline: none;
+  font-family: Sen;
+  font-weight: normal;
 }
 
 html, body {
@@ -13,12 +42,8 @@ html, body {
   float: left;
 }
 
-body {
-  font-family: var(--main-font);
-}
-
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
+  font-weight: bold;
   line-height: 1.33;
   letter-spacing: -2px;
 }
@@ -52,6 +77,8 @@ button {
   color: var(--main-color);
   padding: 16px 48px;
   cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
 }
 button:hover {
   background-color: #edc14a;
@@ -115,38 +142,6 @@ dl, ol, ul, li {
 
 .direction_column {
   flex-direction: column;
-}
-
-@font-face {
-  font-family: "Sen-Bold";
-  src: url("fonts/Sen-Bold.eot");
-  src: url("fonts/Sen-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Sen-Bold.woff2") format("woff2"), url("fonts/Sen-Bold.woff") format("woff"), url("fonts/Sen-Bold.ttf") format("truetype"), url("fonts/Sen-Bold.svg#Sen-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Sen-Regular";
-  src: url("fonts/Sen-Regular.eot");
-  src: url("fonts/Sen-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Sen-Regular.woff2") format("woff2"), url("fonts/Sen-Regular.woff") format("woff"), url("fonts/Sen-Regular.ttf") format("truetype"), url("fonts/Sen-Regular.svg#Sen-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-:root {
-  --main-color: #232536;
-  --accent-color: #ffd050;
-  --text-color1: #4c4c4c;
-  --text-color2: #6d6e76;
-  --text-color2: #592ea9;
-  --block-color1: #f4f4f4;
-  --block-color2: #f4f0f8;
-  --block-color3: #fbf6ea;
-}
-
-:root {
-  --main-font: Sen-Regular;
-  --heading-font: Sen-Bold;
 }
 
 p {
