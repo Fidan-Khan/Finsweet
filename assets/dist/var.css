@@ -1,4 +1,9 @@
 :root {
+  --heading-font: Sen;
+  --body-font: Inter;
+}
+
+:root {
   --main-color: #232536;
   --accent-color: #ffd050;
   --text-color1: #4c4c4c;
@@ -7,4 +12,4 @@
   --block-color1: #f4f4f4;
   --block-color2: #f4f0f8;
   --block-color3: #fbf6ea;
-}/*# sourceMappingURL=var.css.map */
+}
