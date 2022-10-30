@@ -1,3 +1,20 @@
+:root {
+  --heading-font: "Sen";
+  --body-font: "Inter", sans-serif;
+}
+
+:root {
+  --main-color: #232536;
+  --accent-color: #ffd050;
+  --text-color1: #4c4c4c;
+  --text-color2: #6d6e76;
+  --text-color2: #592ea9;
+  --text-color3: #ffffff;
+  --block-color1: #f4f4f4;
+  --block-color2: #f4f0f8;
+  --block-color3: #fbf6ea;
+}
+
 @font-face {
   font-family: "Sen";
   src: url("fonts/Sen-Bold.eot");
@@ -16,28 +33,12 @@
 }
 @font-face {
   font-family: "Inter";
-  src: url("fonts/Inter-Regular.eot");
-  src: url("fonts/Inter-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Inter-Regular.woff2") format("woff2"), url("fonts/Inter-Regular.woff") format("woff"), url("fonts/Inter-Regular.ttf") format("truetype"), url("fonts/Inter-Regular.svg#Inter-Regular") format("svg");
+  src: url("fonts/inter/Inter-Regular.eot");
+  src: url("fonts/inter/Inter-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/inter/Inter-Regular.woff2") format("woff2"), url("fonts/inter/Inter-Regular.woff") format("woff"), url("fonts/inter/Inter-Regular.ttf") format("truetype"), url("fonts/inter/Inter-Regular.svg#Inter-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-:root {
-  --heading-font: Sen;
-  --body-font: Inter;
-}
-
-:root {
-  --main-color: #232536;
-  --accent-color: #ffd050;
-  --text-color1: #4c4c4c;
-  --text-color2: #6d6e76;
-  --text-color2: #592ea9;
-  --block-color1: #f4f4f4;
-  --block-color2: #f4f0f8;
-  --block-color3: #fbf6ea;
-}
-
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -126,7 +127,7 @@ dl, ol, ul, li {
   float: none;
   margin: 0 auto;
   padding: 0 12px;
-  width: 1464px;
+  width: 1304px;
 }
 
 .full_w {
@@ -159,6 +160,12 @@ dl, ol, ul, li {
   flex-direction: column;
 }
 
-p {
-  color: red;
+.header {
+  background-color: var(--main-color);
+}
+.header__logo img {
+  width: 140px;
+}
+.header .menu__item a {
+  color: var(--text-color3);
 }

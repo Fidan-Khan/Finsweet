@@ -1,3 +1,10 @@
-p {
-    color:red;
+.header {
+    background-color: var(--main-color);
+    &__logo img {
+        width: 140px;
+    }
+
+    .menu__item a {
+        color: var(--text-color3);
+    }
 }
