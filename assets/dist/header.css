@@ -1,9 +1,22 @@
 .header {
   background-color: var(--main-color);
+  padding: 12px 0;
 }
 .header__logo img {
   width: 140px;
 }
-.header .menu__item a {
+.header__navigation {
+  gap: 32px;
+}
+.header__navigation .menu__body {
+  gap: 24px;
+}
+.header__navigation .menu__body .menu__item a {
   color: var(--text-color3);
+}
+.header__navigation .menu__body .menu__item a:hover {
+  color: #edc14a;
+}
+.header__btn {
+  background-color: var(--text-color3);
 }

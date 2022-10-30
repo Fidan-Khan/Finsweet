@@ -1,10 +1,26 @@
 .header {
     background-color: var(--main-color);
-    &__logo img {
-        width: 140px;
-    }
+    padding: 12px 0;
+        &__logo img {
+            width: 140px;
+        }
 
-    .menu__item a {
-        color: var(--text-color3);
-    }
+        &__navigation {
+            gap: 32px;
+
+            .menu__body {
+                gap: 24px;
+                    .menu__item a {
+                        color: var(--text-color3);
+                            &:hover {
+                                color: #edc14a;
+                            }
+                    }
+            }
+        }
+
+        &__btn {
+            background-color: var(--text-color3);
+        }
+
 }

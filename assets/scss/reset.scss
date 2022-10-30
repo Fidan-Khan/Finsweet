@@ -49,6 +49,7 @@ h6 {
 button {
 	background-color: var(--accent-color);
 	color: var(--main-color);
+	font-family: 'Sen';
 	font-size: 18px;
 	font-weight: bold;
 	line-height: 1.33;
@@ -87,8 +88,8 @@ dl, ol, ul, li {
 	position: relative;
 	float: none;
 	margin: 0 auto;
-	padding: 0 12px;
-    width: 1304px;
+	padding: 0 80px;
+    width: 1400px;
 }
 
 .full_w {

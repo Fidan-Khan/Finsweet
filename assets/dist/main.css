@@ -90,6 +90,7 @@ h6 {
 button {
   background-color: var(--accent-color);
   color: var(--main-color);
+  font-family: "Sen";
   font-size: 18px;
   font-weight: bold;
   line-height: 1.33;
@@ -126,8 +127,8 @@ dl, ol, ul, li {
   position: relative;
   float: none;
   margin: 0 auto;
-  padding: 0 12px;
-  width: 1304px;
+  padding: 0 80px;
+  width: 1400px;
 }
 
 .full_w {
@@ -162,10 +163,23 @@ dl, ol, ul, li {
 
 .header {
   background-color: var(--main-color);
+  padding: 12px 0;
 }
 .header__logo img {
   width: 140px;
 }
-.header .menu__item a {
+.header__navigation {
+  gap: 32px;
+}
+.header__navigation .menu__body {
+  gap: 24px;
+}
+.header__navigation .menu__body .menu__item a {
   color: var(--text-color3);
+}
+.header__navigation .menu__body .menu__item a:hover {
+  color: #edc14a;
+}
+.header__btn {
+  background-color: var(--text-color3);
 }
