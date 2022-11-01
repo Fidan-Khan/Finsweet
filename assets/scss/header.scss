@@ -17,10 +17,45 @@
                             }
                     }
             }
+
+            @media (max-width: 992px) {
+                display: none;
+            }
         }
 
         &__btn {
             background-color: var(--text-color3);
         }
+
+        &__hamburger {
+            
+            span {
+               display: block;
+               width: 26px;
+               height: 2px;
+               background-color: var(--text-color3);
+               &:not(:last-child) {
+                   margin-bottom: 3px;
+               }
+               transition: all 0.5s;
+               transform-origin: 9px 2px;
+           }
+
+           &.open {
+            span:first-child {
+                transform: rotate(45deg);
+            }
+            span:nth-child(2) {
+                display: none;
+            }
+            span:last-child {
+                transform: rotate(-45deg);
+            }
+           }
+
+           @media (min-width: 993px) {
+               display: none;
+           }
+       }
 
 }

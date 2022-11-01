@@ -87,7 +87,7 @@ dl, ol, ul, li {
   float: none;
   margin: 0 auto;
   padding: 0 80px;
-  width: 1400px;
+  max-width: 1400px;
 }
 
 .full_w {

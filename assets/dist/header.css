@@ -17,6 +17,36 @@
 .header__navigation .menu__body .menu__item a:hover {
   color: #edc14a;
 }
+@media (max-width: 992px) {
+  .header__navigation {
+    display: none;
+  }
+}
 .header__btn {
   background-color: var(--text-color3);
+}
+.header__hamburger span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: var(--text-color3);
+  transition: all 0.5s;
+  transform-origin: 9px 2px;
+}
+.header__hamburger span:not(:last-child) {
+  margin-bottom: 3px;
+}
+.header__hamburger.open span:first-child {
+  transform: rotate(45deg);
+}
+.header__hamburger.open span:nth-child(2) {
+  display: none;
+}
+.header__hamburger.open span:last-child {
+  transform: rotate(-45deg);
+}
+@media (min-width: 993px) {
+  .header__hamburger {
+    display: none;
+  }
 }
