@@ -48,10 +48,25 @@
             span:nth-child(2) {
                 display: none;
             }
-            span:last-child {
+            span:nth-child(3) {
                 transform: rotate(-45deg);
             }
            }
+
+           .overlay {
+            display: none;
+            &.hide {
+                display: block;
+                width: 50%;
+                height: 100vh;
+                background-color: var(--accent-color);
+                position: fixed;
+                top: 57px;
+                left: 100%;
+                transform: translate(-100%);
+                transition: all 0.5s;
+            }
+        }
 
            @media (min-width: 993px) {
                display: none;
@@ -59,3 +74,6 @@
        }
 
 }
+
+
+
