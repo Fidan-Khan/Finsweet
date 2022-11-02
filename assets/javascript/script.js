@@ -1,18 +1,8 @@
 const btnHamburger = document.querySelector('#btnHamburger');
-const overlay = document.querySelector('.overlay');
+const nav = document.querySelector('.header__navigation');
 
-btnHamburger.addEventListener('click', function() {
+btnHamburger.addEventListener('click', ()=> {
+    btnHamburger.classList.toggle('open');
+    nav.classList.toggle('active');
 
-    if(btnHamburger.classList.contains('open')) {
-        btnHamburger.classList.remove('open');
-        setTimeout(() => {
-            overlay.classList.remove('hide');
-          }, 300)
-    }
-    else {
-        btnHamburger.classList.add('open');
-        setTimeout(() => {
-            overlay.classList.add('hide');
-          }, 500)
-    }
 });
