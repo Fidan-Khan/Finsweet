@@ -4,9 +4,12 @@
 }
 .header__logo img {
   width: 140px;
+  margin-top: 13px;
+  margin-bottom: 13px;
 }
 .header__navigation {
   gap: 32px;
+  z-index: 100;
 }
 .header__navigation .menu__body {
   gap: 24px;
@@ -23,7 +26,7 @@
 @media (max-width: 992px) {
   .header__navigation {
     position: fixed;
-    top: 57px;
+    top: 80px;
     left: -100%;
     flex-direction: column;
     width: 100%;

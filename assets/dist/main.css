@@ -167,9 +167,12 @@ dl, ol, ul, li {
 }
 .header__logo img {
   width: 140px;
+  margin-top: 13px;
+  margin-bottom: 13px;
 }
 .header__navigation {
   gap: 32px;
+  z-index: 100;
 }
 .header__navigation .menu__body {
   gap: 24px;
@@ -186,7 +189,7 @@ dl, ol, ul, li {
 @media (max-width: 992px) {
   .header__navigation {
     position: fixed;
-    top: 57px;
+    top: 80px;
     left: -100%;
     flex-direction: column;
     width: 100%;
@@ -252,7 +255,7 @@ dl, ol, ul, li {
   color: var(--accent-color);
 }
 .hero__headline {
-  width: 803px;
+  max-width: 803px;
   font-family: var(--heading-font);
   font-size: 56px;
   font-weight: bold;
@@ -272,7 +275,7 @@ dl, ol, ul, li {
   color: var(--text-color3);
 }
 .hero__text {
-  width: 599px;
+  max-width: 599px;
   margin-top: 16px;
 }
 .hero__button {
