@@ -226,3 +226,56 @@ dl, ol, ul, li {
     display: none;
   }
 }
+
+.hero {
+  background-image: radial-gradient(circle at 75% 0%, rgba(0, 0, 0, 0), rgb(32, 32, 32) 70%), url(/assets/images/bg/cover_photo.jpg);
+  background-size: cover;
+}
+.hero__content {
+  gap: 24px;
+  padding-top: 128px;
+  padding-bottom: 204px;
+  color: var(--text-color3);
+}
+.hero__category {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.25;
+  letter-spacing: 3px;
+}
+.hero__category a {
+  color: var(--text-color3);
+  font-weight: bold;
+}
+.hero__category a:hover {
+  color: var(--accent-color);
+}
+.hero__headline {
+  width: 803px;
+  font-family: var(--heading-font);
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 1.14;
+  letter-spacing: -2px;
+  color: var(--text-color3);
+}
+.hero__author, .hero__text {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-color3);
+}
+.hero__author a, .hero__text a {
+  color: var(--accent-color);
+}
+.hero__author a:hover, .hero__text a:hover {
+  color: var(--text-color3);
+}
+.hero__text {
+  width: 599px;
+  margin-top: 16px;
+}
+.hero__button {
+  width: 205px;
+  margin-top: 24px;
+}
