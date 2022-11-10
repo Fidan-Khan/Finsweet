@@ -282,3 +282,11 @@ dl, ol, ul, li {
   width: 205px;
   margin-top: 24px;
 }
+
+.posts__container {
+  padding: 128px 0;
+}
+.posts h2 {
+  line-height: 1.33;
+  letter-spacing: -2px;
+}
