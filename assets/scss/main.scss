@@ -42,7 +42,7 @@
         color: var(--text-color3);
     }
 
-    &__author, &__text {
+    &__author {
         font-size: 16px;
         line-height: 1.75;
         color: var(--text-color3);
@@ -58,6 +58,7 @@
     &__text {
         max-width: 599px;
         margin-top: 16px;
+        color: var(--text-color3);
     }
 
     &__button {
@@ -118,9 +119,6 @@
             p {
                 margin-top: 16px;
                 margin-bottom: 32px;
-                font-size: 16px;
-                line-height: 1.75;
-                color: var(--text-color2);
             }
              
         }
@@ -159,12 +157,57 @@
                     background-color: var(--block-color3);
                 }
             }
-
-            }
-
+        }
     }
 
 }
 
+.about-us {
+
+    &__container {
+        background-color: var(--block-color2);
+    }
+
+    &__content {
+        width: 1280px;
+        padding: 96px 108px 96px 80px;
+        gap: 61px;
+
+        .about, .mission {
+            gap: 16px;
+            h2 {
+                width: 490px;
+                line-height: 1.33;
+                letter-spacing: -2px;
+                color: var(--main-color);
+            }
+            h6 {
+                font-weight: 600;
+                line-height: 1.25;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                color: var(--main-color);
+                margin-bottom: 8px;
+            }
+            h3 {
+                width: 481px;
+                line-height: 1.43;
+                letter-spacing: -1px;
+                color: var(--main-color);
+            }
+            p {
+                width: 515px;
+            }
+            a {
+                font-family: var(--heading-font);
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 1.78;
+                color: var(--text-color4);
+            }
+        }
+
+    }
+}
 
 

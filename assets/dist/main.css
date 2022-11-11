@@ -59,8 +59,6 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   font-weight: bold;
-  line-height: 1.33;
-  letter-spacing: -2px;
 }
 
 h1 {
@@ -85,6 +83,12 @@ h5 {
 
 h6 {
   font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-color2);
 }
 
 button {
@@ -263,20 +267,21 @@ dl, ol, ul, li {
   letter-spacing: -2px;
   color: var(--text-color3);
 }
-.hero__author, .hero__text {
+.hero__author {
   font-size: 16px;
   line-height: 1.75;
   color: var(--text-color3);
 }
-.hero__author a, .hero__text a {
+.hero__author a {
   color: var(--accent-color);
 }
-.hero__author a:hover, .hero__text a:hover {
+.hero__author a:hover {
   color: var(--text-color3);
 }
 .hero__text {
   max-width: 599px;
   margin-top: 16px;
+  color: var(--text-color3);
 }
 .hero__button {
   width: 205px;
@@ -327,9 +332,6 @@ dl, ol, ul, li {
 .posts__content .featured-post p {
   margin-top: 16px;
   margin-bottom: 32px;
-  font-size: 16px;
-  line-height: 1.75;
-  color: var(--text-color2);
 }
 .posts__content .all-posts {
   gap: 32px;
@@ -360,4 +362,46 @@ dl, ol, ul, li {
 }
 .posts__content .all-posts ul li:hover {
   background-color: var(--block-color3);
+}
+
+.about-us__container {
+  background-color: var(--block-color2);
+}
+.about-us__content {
+  width: 1280px;
+  padding: 96px 108px 96px 80px;
+  gap: 61px;
+}
+.about-us__content .about, .about-us__content .mission {
+  gap: 16px;
+}
+.about-us__content .about h2, .about-us__content .mission h2 {
+  width: 490px;
+  line-height: 1.33;
+  letter-spacing: -2px;
+  color: var(--main-color);
+}
+.about-us__content .about h6, .about-us__content .mission h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin-bottom: 8px;
+}
+.about-us__content .about h3, .about-us__content .mission h3 {
+  width: 481px;
+  line-height: 1.43;
+  letter-spacing: -1px;
+  color: var(--main-color);
+}
+.about-us__content .about p, .about-us__content .mission p {
+  width: 515px;
+}
+.about-us__content .about a, .about-us__content .mission a {
+  font-family: var(--heading-font);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.78;
+  color: var(--text-color4);
 }
