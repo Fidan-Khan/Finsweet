@@ -53,7 +53,7 @@ p {
 button {
   background-color: var(--accent-color);
   color: var(--main-color);
-  font-family: "Sen";
+  font-family: var(--heading-font);
   font-size: 18px;
   font-weight: bold;
   line-height: 1.33;
