@@ -300,10 +300,110 @@
 }
 
 .special-post {
+
     img {
         width: 100%;
         max-width: 949px;
     }
+
+    &__text {
+        padding: 80px;
+        max-width: 706px;
+        background-color: var(--text-color3);
+
+
+        @media (min-width: 900px) {
+            position: absolute;
+            top: 121px;
+            right: 0;
+        }
+
+        h6 {
+            font-family: var(--body-font);
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.25;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--main-color);
+        }
+    
+        h1 {
+            font-size: 48px;
+            line-height: 1.33;
+            letter-spacing: -2px;
+            color: var(--main-color);
+            max-width: 545px;
+            margin-block: 24px 16px;
+        }
+    
+        p {
+            margin-bottom: 32px;
+        }
+    }
+
+
+}
+
+.authors {
+    padding-top: 128px;
+
+    &__content {
+        gap: 48px;
+
+        h2 {
+            line-height: 1.33;
+            letter-spacing: -2px;
+            text-align: center;
+            text-transform: capitalize;
+            color: var(--main-color);
+        }
+
+    }
+
+    &__profiles {
+        gap: 32px;
+        @media (max-width: 992px) {
+            flex-wrap: wrap;
+        }
+        
+        .profile {
+            // max-width: 296px;
+            padding: 40px 28px;
+            background-color: var(--block-color1);
+            transition: all 0.3s ease-in-out;
+
+            @media (max-width: 992px) {
+                width: 47%;
+            }
+    
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+
+            &:hover {
+                background-color: var(--block-color3);
+            }
+
+            img {
+                max-width: 128px;
+            }
+
+            &__details {
+                margin-block: 20px;
+            }
+
+            &__social-media {
+                gap: 16px;
+
+                img {
+                    width: 16px;
+                }
+            }
+
+        }
+    }
+
 }
 
 
