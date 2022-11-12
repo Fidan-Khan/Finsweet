@@ -548,6 +548,7 @@ dl, ol, ul, li {
 }
 .authors__profiles .profile {
   padding: 40px 28px;
+  text-align: center;
   background-color: var(--block-color1);
   transition: all 0.3s ease-in-out;
 }
@@ -575,4 +576,34 @@ dl, ol, ul, li {
 }
 .authors__profiles .profile__social-media img {
   width: 16px;
+}
+
+.logos__content {
+  padding-block: 96px;
+  gap: 86.6px;
+}
+@media (max-width: 992px) {
+  .logos__content {
+    overflow-x: scroll;
+  }
+}
+.logos__content span:first-child {
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--text-color2);
+}
+.logos__content span:last-child {
+  font-family: var(--heading-font);
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.33;
+  color: var(--text-color2);
+  width: 136px;
+}
+.logos__content .component {
+  gap: 75px;
+}
+.logos__content .component img {
+  height: 32px;
+  opacity: 0.8;
 }
