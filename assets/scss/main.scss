@@ -411,10 +411,7 @@
     &__content {
         padding-block: 96px;
         gap: 86.6px;
-
-        @media (max-width: 992px) {
-            overflow-x: scroll;
-        }
+        flex-wrap: wrap;
 
         span:first-child {
             font-size: 14px;
@@ -433,6 +430,7 @@
 
         .component {
             gap: 75px;
+            flex-wrap: wrap;
 
             img {
                 height: 32px;
@@ -441,6 +439,167 @@
         }
 
 
+    }
+
+}
+
+.testimonials {
+    &__content {
+        max-width: 1280px;
+        padding: 80px 111px 74px 112px;
+        background-color: var(--block-color3);
+
+        @media (max-width: 926px) {
+            flex-direction: column;
+            gap: 80px;
+        }
+        
+        .testimonials__left-side {
+
+            h6 {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 1.25;
+                letter-spacing: 3px;
+                color: var(--main-color);
+            }
+    
+            h2 {
+                max-width: 345px;
+                margin-block: 12px 16px;
+                line-height: 1.33;
+                letter-spacing: -2px;
+                color: var(--main-color);
+
+                @media (max-width: 926px) {
+                    max-width: 100%;
+                }
+            }
+    
+            p {
+                max-width: 349px;
+                color: var(--main-color);
+
+                @media (max-width: 926px) {
+                    max-width: 100%;
+                }
+            }
+        }
+    
+        .testimonials__h-line {
+            width: 1px;
+            height: 310px;
+            margin-inline: 95px 80px;
+            opacity: 0.4;
+            background-color: var(--text-color2);
+    
+            @media (max-width: 926px) {
+                display: none;
+            }
+        }
+    
+        .testimonials__slider {
+
+            @media (max-width: 926px) {
+                gap: 50px;
+            }
+    
+            >span {
+                max-width: 469px;
+                font-family: var(--heading-font);
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 1.33;
+                color: var(--main-color);
+                @media (max-width: 926px) {
+                    max-width: 100%;
+                }
+            }
+    
+            
+            &-bottom {
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                    gap: 40px;
+                }
+                .author {
+                    gap: 16px;
+                    
+                    img {
+                        width: 48px;
+                        height: 48px;
+                        border-radius: 16px;
+                    }
+    
+                    h4 {
+                        line-height: 1.33;
+                        color: var(--main-color);
+                    }
+        
+                    span {
+                        line-height: 1.75;
+                        color: var(--text-color2);
+                    }
+                }
+            }
+            
+    
+            .slider-buttons {
+                gap: 24px;
+    
+                a {
+                    position: relative;
+                    transition: all 0.2s linear;
+                }
+    
+                a:first-child {
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%;
+                    background-color: var(--text-color3);
+    
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        left: 18px;
+                        top: 15px;
+                        width: 15px;
+                        height: 15px;
+                        border-top: 2px solid black;
+                        border-left: 2px solid black;
+                        transform: rotate(-45deg);
+                    }
+    
+                    &:hover {
+                        transform: translate3d(-10px, 0, 0);
+                    }
+                }
+    
+                a:last-child {
+                    width: 62px;
+                    height: 62px;
+                    border-radius: 50%;
+                    background-color: var(--main-color);
+    
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        left: 18px;
+                        top: 20px;
+                        width: 20px;
+                        height: 20px;
+                        border-top: 2px solid white;
+                        border-left: 2px solid white;
+                        transform: rotate(135deg);
+                    }
+    
+                    &:hover {
+                        transform: translate3d(10px, 0, 0);
+                    }
+                }
+            }
+            
+        }
     }
 
 }
