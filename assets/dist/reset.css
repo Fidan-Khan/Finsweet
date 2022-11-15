@@ -121,6 +121,10 @@ dl, ol, ul, li {
   align-items: center;
 }
 
+.align_top {
+  align-items: flex-start;
+}
+
 .direction_column {
   flex-direction: column;
 }

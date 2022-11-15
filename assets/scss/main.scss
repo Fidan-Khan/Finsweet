@@ -125,7 +125,7 @@
             }
 
             button {
-                width: 205px;
+                align-self: flex-start;
             }
              
         }
@@ -368,7 +368,6 @@
         }
         
         .profile {
-            // max-width: 296px;
             padding: 40px 28px;
             text-align: center;
             background-color: var(--block-color1);
@@ -604,4 +603,22 @@
 
 }
 
+.join {
+    &__content {
+        padding-block: 128px;
+        h2 {
+            line-height: 1.33;
+            letter-spacing: -2px;
+            text-align: center;
+            color: var(--main-color);
+        }
+        p {
+            margin-block: 16px 32px;
+            text-align: center;
+        }
+        
+    }
+}
+
+@forward 'footer';
 
