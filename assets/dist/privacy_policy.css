@@ -173,6 +173,10 @@ dl, ol, ul, li {
 .header {
   background-color: var(--main-color);
   padding: 12px 0;
+  z-index: 100;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 .header__logo img {
   width: 140px;
@@ -335,6 +339,7 @@ dl, ol, ul, li {
   border: solid 1px #4c4c4c;
   background-color: transparent;
   color: var(--text-color3);
+  caret-color: var(--accent-color);
 }
 @media (max-width: 424px) {
   .footer__subscribe form input {

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="favicon icon" href="images/favicon.png">
-    <link rel="stylesheet" href="assets/dist/main.css">
+    <link rel="stylesheet" href="../assets/dist/blog.css">
     <title>Finsweet</title>
 </head>
 <body>
@@ -14,20 +14,20 @@
 
             <div class="full-w flex justify_between align_center">
                 
-                <a href="index.html" class="header__logo" >
-                    <img src="assets/images/logo.png" alt="logo" title="logo" />
+                <a href="../index.html" class="header__logo" >
+                    <img src="../assets/images/logo.png" alt="logo" title="logo" />
                 </a>
 
                 <div class="header__navigation flex align_center">
                     <nav class="header__menu">
                         <ul class="menu__body flex justify_between align_center">
-                            <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">About us</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Contact us</a></li>
+                            <li class="menu__item"><a href="../index.html" class="menu__link">Home</a></li>
+                            <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+                            <li class="menu__item"><a href="about.html" class="menu__link">About us</a></li>
+                            <li class="menu__item"><a href="contact.html" class="menu__link">Contact us</a></li>
                         </ul>
                     </nav>
-                    <button type="button" class="header__btn">Subscribe</button>
+                    <button onclick="location.href='#footer'" type="button" class="header__btn">Subscribe</button>
                 </div>
 
                 <a href="#" class="header__hamburger" id="btnHamburger">
@@ -42,21 +42,84 @@
         </div>
     </header>
 
-    <footer class="footer full-w">
+    <section class="featured_post full-w">
+        <div class="featured_post__container">
+            <div class="featured_post__content flex full-w">
+                <div class="flex direction_column">
+                    <h6>Featured Post</h6>
+                    <h2>Step-by-step guide to choosing great font pairs</h2>
+                    <span class="hero__author">By <a href="#">James West</a> 
+                    <p> Duis aute irure dolor in reprehenderit in voluptate velit 
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                        occaecat cupidatat non proident.</p>
+                    <button>Read More ></button>
+                </div>
+                <img src="../assets/images/bg/featured-image.jpg" alt="featured-post-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="category full-w">
+        <div class="category__container">
+
+            <div class="category__content full-w flex direction_column">
+                <h2>Choose a category</h2>
+                <ul class="flex">
+                    <li class="flex direction_column">
+                        <img src="../assets/images/categories/Vector.png" alt="category-icon">
+                        <a href="#">Business</a>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    </li>
+                    <li class="flex direction_column">
+                        <img src="../assets/images/categories/Vector (1).png" alt="category-icon">
+                        <a href="#">Startup</a>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    </li>
+                    <li class="flex direction_column">
+                        <img src="../assets/images/categories/Vector (2).png" alt="category-icon">
+                        <a href="#">Economy</a>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    </li>
+                    <li class="flex direction_column">
+                        <img src="../assets/images/categories/Vector (3).png" alt="category-icon">
+                        <a href="#">Technology</a>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="join full-w">
+        <div class="join__container">
+
+            <div class="join__content full-w flex direction_column align_center">
+                <h2>Join our team to be a part of our story</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt.</p>
+                <button class="join__button">Join Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer full-w" id="footer">
         <div class="footer__container">
 
             <div class="footer__content full-w flex direction_column">
                 <div class="footer__navigation flex justify_between align_center">
-                    <a href="index.html" class="footer__logo" >
-                        <img src="assets/images/logo.png" alt="logo" title="logo" />
+                    <a href="../index.html" class="footer__logo" >
+                        <img src="../assets/images/logo.png" alt="logo" title="logo" />
                     </a>
     
                     <nav class="footer__menu">
                         <ul class="menu__body flex justify_between align_center">
-                            <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">About us</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Contact us</a></li>
+                            <li class="menu__item"><a href="../index.html" class="menu__link">Home</a></li>
+                            <li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+                            <li class="menu__item"><a href="about.html" class="menu__link">About us</a></li>
+                            <li class="menu__item"><a href="contact.html" class="menu__link">Contact us</a></li>
+                            <li class="menu__item"><a href="privacy_policy.html" class="menu__link">Privacy Policy</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -77,16 +140,16 @@
 
                     <div class="social-media-icon flex">
                         <a href="https://www.facebook.com/">
-                            <img src="assets/images/social/facebook.svg" alt="social media icon">
+                            <img src="../assets/images/social/facebook.svg" alt="social media icon">
                         </a>
                         <a href="https://twitter.com/">
-                            <img src="assets/images/social/twitter.svg" alt="social media icon">
+                            <img src="../assets/images/social/twitter.svg" alt="social media icon">
                         </a>
                         <a href="https://www.instagram.com/">
-                            <img src="assets/images/social/instagram.svg" alt="social media icon">
+                            <img src="../assets/images/social/instagram.svg" alt="social media icon">
                         </a>
                         <a href="https://www.linkedin.com/">
-                            <img src="assets/images/social/linkedin.svg" alt="social media icon">
+                            <img src="../assets/images/social/linkedin.svg" alt="social media icon">
                         </a>
                     </div>
                 </div>
