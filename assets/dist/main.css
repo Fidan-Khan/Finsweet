@@ -772,7 +772,7 @@ dl, ol, ul, li {
   background-color: var(--main-color);
   padding-block: 57.5px;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .footer__navigation {
     flex-direction: column;
     gap: 24px;
@@ -789,7 +789,7 @@ dl, ol, ul, li {
   line-height: 1.75;
   color: var(--text-color3);
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .footer__menu .menu__body {
     flex-direction: column;
   }
@@ -816,7 +816,7 @@ dl, ol, ul, li {
   }
 }
 .footer__subscribe form input {
-  max-width: 323px !important;
+  max-width: 323px;
   height: 56px;
   padding: 14px 24.9px;
   border: solid 1px #4c4c4c;
