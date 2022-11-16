@@ -104,6 +104,10 @@
 .privacy-text {
     padding-block: 128px;
 
+    &__container {
+        max-width: 768px;
+    }
+
     h1 {
         max-width: 716.9px;
         margin-bottom: 32px;
@@ -182,6 +186,7 @@
                 padding: 14px 24.9px;
                 border: solid 1px #4c4c4c;
                 background-color: transparent;
+                color: var(--text-color3);
 
                 @media (max-width: 424px) {
                     width: 178px;

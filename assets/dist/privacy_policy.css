@@ -258,6 +258,9 @@ dl, ol, ul, li {
 .privacy-text {
   padding-block: 128px;
 }
+.privacy-text__container {
+  max-width: 768px;
+}
 .privacy-text h1 {
   max-width: 716.9px;
   margin-bottom: 32px;
@@ -331,6 +334,7 @@ dl, ol, ul, li {
   padding: 14px 24.9px;
   border: solid 1px #4c4c4c;
   background-color: transparent;
+  color: var(--text-color3);
 }
 @media (max-width: 424px) {
   .footer__subscribe form input {

@@ -671,7 +671,19 @@ dl, ol, ul, li {
     gap: 50px;
   }
 }
-.testimonials__content .testimonials__slider > span {
+.testimonials__content .testimonials__slider .slider__text {
+  overflow: hidden;
+  max-width: 470px;
+  position: relative;
+}
+.testimonials__content .testimonials__slider .slider__item,
+.testimonials__content .testimonials__slider .slider__item--hidden {
+  display: none;
+}
+.testimonials__content .testimonials__slider .slider__item--visible {
+  display: block;
+}
+.testimonials__content .testimonials__slider .slider__item {
   max-width: 469px;
   font-family: var(--heading-font);
   font-size: 24px;
@@ -680,7 +692,7 @@ dl, ol, ul, li {
   color: var(--main-color);
 }
 @media (max-width: 926px) {
-  .testimonials__content .testimonials__slider > span {
+  .testimonials__content .testimonials__slider .slider__item {
     max-width: 100%;
   }
 }
@@ -709,17 +721,18 @@ dl, ol, ul, li {
 .testimonials__content .testimonials__slider .slider-buttons {
   gap: 24px;
 }
-.testimonials__content .testimonials__slider .slider-buttons a {
+.testimonials__content .testimonials__slider .slider-buttons button {
   position: relative;
   transition: all 0.2s linear;
+  padding: 0;
 }
-.testimonials__content .testimonials__slider .slider-buttons a:first-child {
+.testimonials__content .testimonials__slider .slider-buttons button:first-child {
   width: 48px;
   height: 48px;
-  border-radius: 50%;
+  border-radius: 50px;
   background-color: var(--text-color3);
 }
-.testimonials__content .testimonials__slider .slider-buttons a:first-child:after {
+.testimonials__content .testimonials__slider .slider-buttons button:first-child:after {
   content: "";
   position: absolute;
   left: 18px;
@@ -730,16 +743,16 @@ dl, ol, ul, li {
   border-left: 2px solid black;
   transform: rotate(-45deg);
 }
-.testimonials__content .testimonials__slider .slider-buttons a:first-child:hover {
+.testimonials__content .testimonials__slider .slider-buttons button:first-child:hover {
   transform: translate3d(-10px, 0, 0);
 }
-.testimonials__content .testimonials__slider .slider-buttons a:last-child {
+.testimonials__content .testimonials__slider .slider-buttons button:last-child {
   width: 62px;
   height: 62px;
   border-radius: 50%;
   background-color: var(--main-color);
 }
-.testimonials__content .testimonials__slider .slider-buttons a:last-child:after {
+.testimonials__content .testimonials__slider .slider-buttons button:last-child:after {
   content: "";
   position: absolute;
   left: 18px;
@@ -750,7 +763,7 @@ dl, ol, ul, li {
   border-left: 2px solid white;
   transform: rotate(135deg);
 }
-.testimonials__content .testimonials__slider .slider-buttons a:last-child:hover {
+.testimonials__content .testimonials__slider .slider-buttons button:last-child:hover {
   transform: translate3d(10px, 0, 0);
 }
 
@@ -821,6 +834,7 @@ dl, ol, ul, li {
   padding: 14px 24.9px;
   border: solid 1px #4c4c4c;
   background-color: transparent;
+  color: var(--text-color3);
 }
 @media (max-width: 424px) {
   .footer__subscribe form input {

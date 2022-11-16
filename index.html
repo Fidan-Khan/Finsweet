@@ -27,7 +27,7 @@
                             <li class="menu__item"><a href="#" class="menu__link">Contact us</a></li>
                         </ul>
                     </nav>
-                    <button type="button" class="header__btn">Subscribe</button>
+                    <button onclick="location.href='#footer'" type="button" class="header__btn">Subscribe</button>
                 </div>
 
                 <a href="#" class="header__hamburger" id="btnHamburger">
@@ -323,8 +323,16 @@
                 <div class="testimonials__h-line"></div>
 
                 <div class="testimonials__slider flex direction_column justify_between">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua.</span>
+                    <div class="slider__text">
+                        <span class="slider__item slider__item--visible">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua.
+                        </span>
+                        <span class="slider__item">
+                            Fidan ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua.
+                        </span>
+                    </div>
 
                     <div class="testimonials__slider-bottom flex justify_between align_center">
                         <div class="flex author">
@@ -336,8 +344,8 @@
                         </div>
 
                         <div class="flex slider-buttons align_center">
-                            <a href=""></a>
-                            <a href=""></a>
+                            <button id="slider__button--prev" aria-label="Previous slide"></button>
+                            <button id="slider__button--next" aria-label="Next slide"></button>
                         </div>
                     </div>
                 </div>
@@ -361,7 +369,7 @@
     </section>
 
 
-    <footer class="footer full-w">
+    <footer class="footer full-w" id="footer">
         <div class="footer__container">
 
             <div class="footer__content full-w flex direction_column">
