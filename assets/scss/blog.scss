@@ -85,20 +85,88 @@
     }
 }
 
-.featured-post {
-    h6 {
-        font-weight: 500;
-        line-height: 1.25;
-        letter-spacing: 3px;
-        color: var(--main-color);
-        text-transform: capitalize;
+.featured_post {
+    padding-block: 80px;
+    background-color: var(--block-color2);
+
+    &__content {
+        gap: 30px;
+
+        h6 {
+            margin-bottom: 20px;
+            font-family: var(--body-font);
+            font-weight: 500;
+            line-height: 1.25;
+            letter-spacing: 3px;
+            color: var(--main-color);
+            text-transform: capitalize;
+        }
+    
+        h2 {
+            max-width: 624px;
+            font-weight: bold;
+            line-height: 1.33;
+            letter-spacing: -2px;
+            color: var(--main-color);
+        }
+    
+        span {
+            margin-block: 16px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.43;
+            color: var(--text-color1);
+    
+            a {
+                font-weight: 600;
+                color: var(--text-color4);
+                &:hover {
+                    color: var(--text-color1);
+                }
+            }
+        }
+
+        p {
+            margin-bottom: 32px;
+            max-width: 624px;
+        }
+    
+        img {
+            width: 100%;
+            max-width: 515px;
+        }
     }
 
-    h2 {
-        font-weight: bold;
-        line-height: 1.33;
-        letter-spacing: -2px;
-        color: var(--main-color);
+    @media (max-width: 980px) {
+        &__content {
+            flex-direction: column;
+        }
+
+        h6, p, img {
+            max-width: 100%;
+        }
+    }
+}
+
+.all-posts {
+    padding-block: 64px 67px;
+
+    &__content {
+        h1 {
+            line-height: 1.33;
+            letter-spacing: -2px;
+            color: var(--main-color);
+            position: relative;
+            &::before {
+                content: '';
+                width: 100%;
+                height: 10px;
+                background-color: #6d6e76;
+                position: absolute;
+                top: 10px;
+                left: 0;
+            }
+        }
     }
 }
 

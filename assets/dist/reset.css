@@ -113,8 +113,12 @@ dl, ol, ul, li {
   justify-content: space-between;
 }
 
+.justify_left {
+  justify-content: flex-start;
+}
+
 .justify_right {
-  justify-content: right;
+  justify-content: flex-end;
 }
 
 .align_center {
@@ -123,6 +127,10 @@ dl, ol, ul, li {
 
 .align_top {
   align-items: flex-start;
+}
+
+.align_bottom {
+  align-items: flex-end;
 }
 
 .direction_column {
