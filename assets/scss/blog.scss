@@ -142,7 +142,7 @@
             flex-direction: column;
         }
 
-        h6, p, img {
+        h2, p, img {
             max-width: 100%;
         }
     }
@@ -151,23 +151,74 @@
 .all-posts {
     padding-block: 64px 67px;
 
-    &__content {
-        h1 {
-            line-height: 1.33;
-            letter-spacing: -2px;
-            color: var(--main-color);
-            position: relative;
-            &::before {
-                content: '';
-                width: 100%;
-                height: 10px;
-                background-color: #6d6e76;
-                position: absolute;
-                top: 10px;
-                left: 0;
-            }
+    h1 {
+        margin-bottom: 31px;
+        line-height: 1.33;
+        letter-spacing: -2px;
+        color: var(--main-color);
+        position: relative;
+        &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: var(--text-color2);
+            opacity: 0.32;
+            position: absolute;
+            top: 100px;
+            left: 0;
         }
     }
+
+    &__slider {
+        padding-block: 64px;
+        gap: 64px;
+
+        .slider__content {
+            gap: 32px;
+
+            img {
+                width: 100%;
+                max-width: 490px;
+            }
+
+            .slider__text {
+                padding-block: 55px;
+
+                h6 {
+                    font-family: var(--body-font);
+                    font-weight: 600;
+                    line-height: 1.25;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                    color: var(--text-color4);
+                }
+    
+                h2 {
+                    max-width: 603 px;
+                    padding-block: 20px 16px;
+                }
+    
+                p {
+                    max-width: 624px;
+                }
+            }
+    
+        }
+    }
+
+    .slider__buttons {
+        gap: 17px;
+
+        button {
+            background-color: transparent;
+            padding: 0;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1.33;
+            color: var(--text-color2);
+        }
+    }
+
 }
 
 .category {
