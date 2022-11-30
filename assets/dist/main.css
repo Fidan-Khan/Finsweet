@@ -814,6 +814,9 @@ dl, ol, ul, li {
   line-height: 1.75;
   color: var(--text-color3);
 }
+.footer__menu .menu__body .menu__item a:hover {
+  color: #edc14a;
+}
 @media (max-width: 768px) {
   .footer__menu .menu__body {
     flex-direction: column;

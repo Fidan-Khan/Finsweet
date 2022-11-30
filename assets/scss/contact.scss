@@ -130,10 +130,12 @@
                 font-size: 14px;
                 line-height: 1.43;
                 position: relative;
+                margin-bottom: 32px;
 
                 &::after {
+                    content: '';
                     position: absolute;
-                    top: 15px;
+                    top: 35px;
                     left: 0;
                     width: 294px;
                     height: 1px;
@@ -159,6 +161,27 @@
         }
 
     }
+
+    form {
+        gap: 16px;
+
+        input, datalist, textarea {
+            width: 768px;
+            height: 76px;
+            padding: 24px;
+            border-radius: 2px;
+            border: solid 1px rgba(109, 110, 118, 0.5);
+            font-size: 16px;
+            line-height: 1.75;
+            text-align: left;
+            color: var(--main-color);
+        }
+
+        textarea {
+            height: 144px;
+            resize: none;
+        }
+    }
 }
 
 .footer {
@@ -182,6 +205,9 @@
                 font-size: 16px;
                 line-height: 1.75;
                 color: var(--text-color3);
+                &:hover {
+                    color: #edc14a;
+                }
             }
 
             @media (max-width: 768px) {
