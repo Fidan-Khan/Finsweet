@@ -564,6 +564,7 @@ dl, ol, ul, li {
 }
 .authors__profiles .profile {
   padding: 40px 28px;
+  width: 296px;
   text-align: center;
   background-color: var(--block-color1);
   transition: all 0.3s ease-in-out;
@@ -580,6 +581,9 @@ dl, ol, ul, li {
 }
 .authors__profiles .profile:hover {
   background-color: var(--block-color3);
+}
+.authors__profiles .profile span {
+  color: var(--text-color2);
 }
 .authors__profiles .profile img {
   max-width: 128px;

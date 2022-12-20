@@ -442,6 +442,7 @@
         
         .profile {
             padding: 40px 28px;
+            width: 296px;
             text-align: center;
             background-color: var(--block-color1);
             transition: all 0.3s ease-in-out;
@@ -456,6 +457,10 @@
 
             &:hover {
                 background-color: var(--block-color3);
+            }
+
+            span {
+                color: var(--text-color2);
             }
 
             img {
