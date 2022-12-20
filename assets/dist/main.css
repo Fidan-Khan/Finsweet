@@ -787,10 +787,12 @@ dl, ol, ul, li {
   letter-spacing: -2px;
   text-align: center;
   color: var(--main-color);
+  max-width: 414px;
 }
 .join__content p {
   margin-block: 16px 32px;
   text-align: center;
+  max-width: 405px;
 }
 
 .footer {

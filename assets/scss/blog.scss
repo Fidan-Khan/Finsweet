@@ -170,10 +170,24 @@
     }
 
     &__slider {
-        padding-block: 64px;
-        gap: 64px;
+
+        .slider__item {
+            overflow: hidden;
+            max-width: 100%;
+            position: relative;
+          }
+          
+          .slider__item,
+          .slider__item--hidden {
+            display: none;
+          }
+          
+          .slider__item--visible {
+            display: block;
+          }
 
         .slider__content {
+            margin-block: 64px;
             gap: 32px;
 
             img {
@@ -216,7 +230,13 @@
             font-weight: bold;
             line-height: 1.33;
             color: var(--text-color2);
+
+            &:nth-child(2) {
+                font-size: 28px;
+                color: var(--main-color);
+            }
         }
+
     }
 
 }
@@ -229,7 +249,7 @@
         h2 {
             line-height: 1.33;
             letter-spacing: -2px;
-            text-align: center;
+            text-align: left;
             text-transform: capitalize;
             color: var(--main-color);
         }
@@ -284,10 +304,12 @@
             letter-spacing: -2px;
             text-align: center;
             color: var(--main-color);
+            max-width: 414px;
         }
         p {
             margin-block: 16px 32px;
             text-align: center;
+            max-width: 405px;
         }
     }
 }

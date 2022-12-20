@@ -19,7 +19,6 @@ let header=document.querySelector('.header');
 window.addEventListener('scroll', (e) => {
     let scroll_top=document.body.getBoundingClientRect().top * -1;
 
-
     if (scroll_top >= 80) {
         header.classList.add('sticky')
     }else{
@@ -32,14 +31,11 @@ let slidePosition = 0;
 let slides = document.getElementsByClassName('slider__item');
 let totalSlides = slides.length;
 
-document.
-  getElementById('slider__button--next')
-  .addEventListener("click", function() {
+document.getElementById('slider__button--next').addEventListener("click", function() {
     moveToNextSlide();
   });
-document.
-  getElementById('slider__button--prev')
-  .addEventListener("click", function() {
+
+document.getElementById('slider__button--prev').addEventListener("click", function() {
     moveToPrevSlide();
   });
 
