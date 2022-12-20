@@ -296,7 +296,7 @@ dl, ol, ul, li {
   width: 100%;
   max-width: 515px;
 }
-@media (max-width: 980px) {
+@media (max-width: 1016px) {
   .featured_post__content {
     flex-direction: column;
   }
@@ -362,6 +362,14 @@ dl, ol, ul, li {
 }
 .all-posts__slider .slider__content .slider__text p {
   max-width: 624px;
+}
+@media screen and (max-width: 900px) {
+  .all-posts__slider .slider__content {
+    flex-direction: column;
+  }
+  .all-posts__slider .slider__content .slider__text {
+    padding-block: 15px;
+  }
 }
 .all-posts .slider__buttons {
   gap: 17px;

@@ -32,12 +32,12 @@ let slides = document.getElementsByClassName('slider__item');
 let totalSlides = slides.length;
 
 document.getElementById('slider__button--next').addEventListener("click", function() {
-    moveToNextSlide();
-  });
+  moveToNextSlide();
+});
 
 document.getElementById('slider__button--prev').addEventListener("click", function() {
-    moveToPrevSlide();
-  });
+  moveToPrevSlide();
+});
 
 function updateSlidePosition() {
   for (let slide of slides) {
