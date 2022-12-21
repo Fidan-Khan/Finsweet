@@ -339,6 +339,10 @@
 
             &__details {
                 margin-block: 20px;
+
+                a {
+                    color: var(--main-color);
+                }
             }
 
             &__social-media {

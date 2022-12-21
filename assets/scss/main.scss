@@ -469,6 +469,10 @@
 
             &__details {
                 margin-block: 20px;
+
+                a {
+                    color: var(--main-color);
+                }
             }
 
             &__social-media {
@@ -526,7 +530,7 @@
         padding: 80px 111px 74px 112px;
         background-color: var(--block-color3);
 
-        @media (max-width: 926px) {
+        @media (max-width: 1006px) {
             flex-direction: column;
             gap: 80px;
         }
@@ -548,7 +552,7 @@
                 letter-spacing: -2px;
                 color: var(--main-color);
 
-                @media (max-width: 926px) {
+                @media (max-width: 1006px) {
                     max-width: 100%;
                 }
             }
@@ -557,7 +561,7 @@
                 max-width: 349px;
                 color: var(--main-color);
 
-                @media (max-width: 926px) {
+                @media (max-width: 1006px) {
                     max-width: 100%;
                 }
             }
@@ -570,14 +574,14 @@
             opacity: 0.4;
             background-color: var(--text-color2);
     
-            @media (max-width: 926px) {
+            @media (max-width: 1006px) {
                 display: none;
             }
         }
     
         .testimonials__slider {
 
-            @media (max-width: 926px) {
+            @media (max-width: 1006px) {
                 gap: 50px;
             }
 
@@ -585,6 +589,9 @@
                 overflow: hidden;
                 max-width: 470px;
                 position: relative;
+                @media (max-width: 1006px) {
+                    max-width: 100%;
+                }
               }
               
               .slider__item,
@@ -603,14 +610,14 @@
                 font-weight: bold;
                 line-height: 1.33;
                 color: var(--main-color);
-                @media (max-width: 926px) {
+                @media (max-width: 1006px) {
                     max-width: 100%;
                 }
             }
     
             
             &-bottom {
-                @media (max-width: 768px) {
+                @media (max-width: 1006px) {
                     flex-direction: column;
                     gap: 40px;
                 }
@@ -629,6 +636,7 @@
                     }
         
                     span {
+                        font-size: 16px;
                         line-height: 1.75;
                         color: var(--text-color2);
                     }

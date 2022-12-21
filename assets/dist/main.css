@@ -591,6 +591,9 @@ dl, ol, ul, li {
 .authors__profiles .profile__details {
   margin-block: 20px;
 }
+.authors__profiles .profile__details a {
+  color: var(--main-color);
+}
 .authors__profiles .profile__social-media {
   gap: 16px;
 }
@@ -636,7 +639,7 @@ dl, ol, ul, li {
   padding: 80px 111px 74px 112px;
   background-color: var(--block-color3);
 }
-@media (max-width: 926px) {
+@media (max-width: 1006px) {
   .testimonials__content {
     flex-direction: column;
     gap: 80px;
@@ -656,7 +659,7 @@ dl, ol, ul, li {
   letter-spacing: -2px;
   color: var(--main-color);
 }
-@media (max-width: 926px) {
+@media (max-width: 1006px) {
   .testimonials__content .testimonials__left-side h2 {
     max-width: 100%;
   }
@@ -665,7 +668,7 @@ dl, ol, ul, li {
   max-width: 349px;
   color: var(--main-color);
 }
-@media (max-width: 926px) {
+@media (max-width: 1006px) {
   .testimonials__content .testimonials__left-side p {
     max-width: 100%;
   }
@@ -677,12 +680,12 @@ dl, ol, ul, li {
   opacity: 0.4;
   background-color: var(--text-color2);
 }
-@media (max-width: 926px) {
+@media (max-width: 1006px) {
   .testimonials__content .testimonials__h-line {
     display: none;
   }
 }
-@media (max-width: 926px) {
+@media (max-width: 1006px) {
   .testimonials__content .testimonials__slider {
     gap: 50px;
   }
@@ -691,6 +694,11 @@ dl, ol, ul, li {
   overflow: hidden;
   max-width: 470px;
   position: relative;
+}
+@media (max-width: 1006px) {
+  .testimonials__content .testimonials__slider .slider__text {
+    max-width: 100%;
+  }
 }
 .testimonials__content .testimonials__slider .slider__item,
 .testimonials__content .testimonials__slider .slider__item--hidden {
@@ -707,12 +715,12 @@ dl, ol, ul, li {
   line-height: 1.33;
   color: var(--main-color);
 }
-@media (max-width: 926px) {
+@media (max-width: 1006px) {
   .testimonials__content .testimonials__slider .slider__item {
     max-width: 100%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1006px) {
   .testimonials__content .testimonials__slider-bottom {
     flex-direction: column;
     gap: 40px;
@@ -731,6 +739,7 @@ dl, ol, ul, li {
   color: var(--main-color);
 }
 .testimonials__content .testimonials__slider-bottom .author span {
+  font-size: 16px;
   line-height: 1.75;
   color: var(--text-color2);
 }

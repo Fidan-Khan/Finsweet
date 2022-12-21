@@ -356,6 +356,9 @@ dl, ol, ul, li {
   text-transform: uppercase;
   color: var(--text-color4);
 }
+.all-posts__slider .slider__content .slider__text a {
+  color: var(--main-color);
+}
 .all-posts__slider .slider__content .slider__text h2 {
   max-width: 603 px;
   padding-block: 20px 16px;

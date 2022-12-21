@@ -474,6 +474,9 @@ dl, ol, ul, li {
 .authors__profiles .profile__details {
   margin-block: 20px;
 }
+.authors__profiles .profile__details a {
+  color: var(--main-color);
+}
 .authors__profiles .profile__social-media {
   gap: 16px;
 }
