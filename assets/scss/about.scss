@@ -125,6 +125,28 @@
             }
         }
     }
+
+    @media (max-width: 1273px) {
+        .about-us-heading {
+            position: static;
+            display: flex;
+        }
+
+        &__content {
+            justify-content: space-between;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        &__content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about-us-text {
+            padding-top: 0;
+        }
+    }
 }
 
 .overview {
@@ -139,8 +161,8 @@
             padding: 32px 48px;
             background-color: var(--accent-color);
             position: absolute;
-            top: 265.4px;
-            left: 109px;
+            bottom: 5.8%;
+            left: 8.09%;
             gap: 68px;
 
             .heading {
@@ -164,21 +186,27 @@
         &::before {
             content: '';
             width: 25%;
-            height: 23px;
+            height: 6%;
             background-color: var(--text-color4);
             position: absolute;
-            top: 420.4px;
-            left: 109px;
+            bottom: 0%;
+            left: 8.09%;
         }
 
         &::after {
             content: '';
             width: 40%;
-            height: 23px;
+            height: 6%;
             background-color: var(--accent-color);
             position: absolute;
-            top: 420.4px;
-            left: 420px;
+            bottom: 0%;
+            left: 33.1%;
+        }
+
+        @media (max-width: 969px) {
+            &::before, &::after, .background {
+                display: none;
+            }
         }
     }
 }
@@ -189,8 +217,9 @@
         background-color: var(--block-color2);
         gap: 32px;
 
-        @media (max-width: 900px) {
+        @media (max-width: 1000px) {
             flex-wrap: wrap;
+            padding-bottom: 128px;
         }
 
         h6 {
@@ -277,7 +306,7 @@
 
     &__profiles {
         gap: 32px;
-        @media (max-width: 992px) {
+        @media (max-width: 1161px) {
             flex-wrap: wrap;
         }
         
@@ -288,7 +317,7 @@
             background-color: var(--block-color1);
             transition: all 0.3s ease-in-out;
 
-            @media (max-width: 992px) {
+            @media (max-width: 1161px) {
                 width: 47%;
             }
     

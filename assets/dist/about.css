@@ -285,6 +285,24 @@ dl, ol, ul, li {
   line-height: 1.75;
   text-align: left;
 }
+@media (max-width: 1273px) {
+  .about-us-header .about-us-heading {
+    position: static;
+    display: flex;
+  }
+  .about-us-header__content {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1000px) {
+  .about-us-header__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-us-header .about-us-text {
+    padding-top: 0;
+  }
+}
 
 .overview__content img {
   width: 100%;
@@ -295,8 +313,8 @@ dl, ol, ul, li {
   padding: 32px 48px;
   background-color: var(--accent-color);
   position: absolute;
-  top: 265.4px;
-  left: 109px;
+  bottom: 5.8%;
+  left: 8.09%;
   gap: 68px;
 }
 .overview__content .background .heading {
@@ -317,20 +335,25 @@ dl, ol, ul, li {
 .overview__content::before {
   content: "";
   width: 25%;
-  height: 23px;
+  height: 6%;
   background-color: var(--text-color4);
   position: absolute;
-  top: 420.4px;
-  left: 109px;
+  bottom: 0%;
+  left: 8.09%;
 }
 .overview__content::after {
   content: "";
   width: 40%;
-  height: 23px;
+  height: 6%;
   background-color: var(--accent-color);
   position: absolute;
-  top: 420.4px;
-  left: 420px;
+  bottom: 0%;
+  left: 33.1%;
+}
+@media (max-width: 969px) {
+  .overview__content::before, .overview__content::after, .overview__content .background {
+    display: none;
+  }
 }
 
 .mission-vision__content {
@@ -338,9 +361,10 @@ dl, ol, ul, li {
   background-color: var(--block-color2);
   gap: 32px;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .mission-vision__content {
     flex-wrap: wrap;
+    padding-bottom: 128px;
   }
 }
 .mission-vision__content h6 {
@@ -416,7 +440,7 @@ dl, ol, ul, li {
 .authors__profiles {
   gap: 32px;
 }
-@media (max-width: 992px) {
+@media (max-width: 1161px) {
   .authors__profiles {
     flex-wrap: wrap;
   }
@@ -428,7 +452,7 @@ dl, ol, ul, li {
   background-color: var(--block-color1);
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 992px) {
+@media (max-width: 1161px) {
   .authors__profiles .profile {
     width: 47%;
   }
