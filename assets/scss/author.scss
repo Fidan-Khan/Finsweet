@@ -85,6 +85,33 @@
     }
 }
 
+.author-info {
+    &__content {
+        padding-block: 128px;
+        gap: 32px;
+
+        .author-photo img {
+            width: 100%;
+            max-width: 251px;
+        }
+
+        .author-text {
+            gap: 24px;
+
+            h1 {
+                max-width: 669px;
+                line-height: 1.33;
+                letter-spacing: -2px;
+                color: var(--main-color);
+            }
+
+            p {
+                max-width: 645px;
+            }
+        }
+    }
+}
+
 .footer {
     background-color: var(--main-color);
     padding-block: 57.5px;

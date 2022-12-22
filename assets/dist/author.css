@@ -251,6 +251,27 @@ dl, ol, ul, li {
   }
 }
 
+.author-info__content {
+  padding-block: 128px;
+  gap: 32px;
+}
+.author-info__content .author-photo img {
+  width: 100%;
+  max-width: 251px;
+}
+.author-info__content .author-text {
+  gap: 24px;
+}
+.author-info__content .author-text h1 {
+  max-width: 669px;
+  line-height: 1.33;
+  letter-spacing: -2px;
+  color: var(--main-color);
+}
+.author-info__content .author-text p {
+  max-width: 645px;
+}
+
 .footer {
   background-color: var(--main-color);
   padding-block: 57.5px;
