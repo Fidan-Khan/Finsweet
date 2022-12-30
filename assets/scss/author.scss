@@ -86,9 +86,41 @@
 }
 
 .author-info {
+    background-color: var(--block-color2);
+
     &__content {
-        padding-block: 128px;
+        padding: 128px;
         gap: 32px;
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
+
+        @media (max-width: 745px) {
+            &::before, &::after {
+                display: none;
+            }
+        }
+
+        &::before {
+            content: '';
+            width: 57%;
+            height: 24px;
+            background-color: var(--accent-color);
+            position: absolute;
+            left: 160px;
+            bottom: 0;
+        }
+
+        &::after {
+            content: '';
+            width: 20%;
+            height: 24px;
+            background-color: var(--text-color4);
+            position: absolute;
+            right: 160px;
+            bottom: 0;
+        }
 
         .author-photo img {
             width: 100%;
@@ -107,6 +139,14 @@
 
             p {
                 max-width: 645px;
+            }
+
+            .author-social-media {
+                gap: 16px;
+
+                img {
+                    width: 16px;
+                }
             }
         }
     }
