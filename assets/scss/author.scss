@@ -152,6 +152,62 @@
     }
 }
 
+.my-posts {
+    &__content {
+        padding: 128px;
+        gap: 64px;
+
+        .posts {
+            gap: 64px;
+
+            .post-content {
+                gap: 32px;
+
+                img {
+                    width: 100%;
+                    max-width: 412px;
+                }
+
+                .post-text {
+                    padding-block: 56px;
+
+                    h6 {
+                        font-family: var(--body-font);
+                        font-weight: 600;
+                        line-height: 1.25;
+                        letter-spacing: 3px;
+                        text-transform: uppercase;
+                        color: var(--text-color4);
+                    }
+
+                    a {
+                        color: var(--main-color);
+                    }
+        
+                    h2 {
+                        max-width: 560.4px;
+                        padding-block: 20px 16px;
+                        letter-spacing: -2px;
+                    }
+        
+                    p {
+                        max-width: 580px;
+                    }
+                }
+                
+                @media (max-width: 1093px) {
+                    flex-direction: column;
+    
+                    .post-text {
+                        padding-block: 15px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
 .footer {
     background-color: var(--main-color);
     padding-block: 57.5px;

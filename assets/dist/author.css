@@ -309,6 +309,51 @@ dl, ol, ul, li {
   width: 16px;
 }
 
+.my-posts__content {
+  padding: 128px;
+  gap: 64px;
+}
+.my-posts__content .posts {
+  gap: 64px;
+}
+.my-posts__content .posts .post-content {
+  gap: 32px;
+}
+.my-posts__content .posts .post-content img {
+  width: 100%;
+  max-width: 412px;
+}
+.my-posts__content .posts .post-content .post-text {
+  padding-block: 56px;
+}
+.my-posts__content .posts .post-content .post-text h6 {
+  font-family: var(--body-font);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-color4);
+}
+.my-posts__content .posts .post-content .post-text a {
+  color: var(--main-color);
+}
+.my-posts__content .posts .post-content .post-text h2 {
+  max-width: 560.4px;
+  padding-block: 20px 16px;
+  letter-spacing: -2px;
+}
+.my-posts__content .posts .post-content .post-text p {
+  max-width: 580px;
+}
+@media (max-width: 1093px) {
+  .my-posts__content .posts .post-content {
+    flex-direction: column;
+  }
+  .my-posts__content .posts .post-content .post-text {
+    padding-block: 15px;
+  }
+}
+
 .footer {
   background-color: var(--main-color);
   padding-block: 57.5px;
