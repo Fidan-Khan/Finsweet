@@ -122,11 +122,18 @@
         padding-block: 128px;
         gap: 144px;
 
+        @media (max-width: 1098px) {
+            flex-direction: column;
+        }
+
         .category-left {
             gap: 32px;
 
             .post-content {
                 gap: 32px;
+                @media (max-width: 780px) {
+                    flex-direction: column;
+                }
 
                 img {
                     width: 100%;
@@ -164,11 +171,11 @@
         }
 
         .category-right {
-
             gap: 48px;
 
             .categories {
                 gap: 40px;
+
                 h2 {
                     line-height: 1.33;
                     letter-spacing: -2px;
@@ -201,6 +208,10 @@
                             line-height: 1.43;
                             letter-spacing: -1px;
                             color: var(--main-color);
+                        }
+        
+                        @media (max-width: 1098px) {
+                            max-width: 100%;
                         }
                     }
                 }

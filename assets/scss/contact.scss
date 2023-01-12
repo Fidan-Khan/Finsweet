@@ -104,6 +104,7 @@
             font-family: var(--heading-font);
             font-size: 48px;
             text-transform: capitalize;
+            text-align: center;
             font-weight: bold;
             line-height: 1.33;
             letter-spacing: -2px;
@@ -119,10 +120,15 @@
     &__block {
         padding: 48px 64px;
         margin-block: 64px 32px;
-        width: 768px;
+        width: 100%;
+        max-width: 768px;
         color: var(--text-color3);
         background-color: var(--text-color4);
         gap: 42.3px;
+
+        @media (max-width: 660px) {
+            flex-direction: column;
+        }
 
         .working-hours, .contact-us {
             span:nth-child(1) {
@@ -164,9 +170,12 @@
 
     form {
         gap: 16px;
+        width: 100%;
+        max-width: 768px;
 
         input, datalist, textarea {
-            width: 768px;
+            width: 100%;
+            max-width: 768px;
             height: 76px;
             padding: 24px;
             border-radius: 2px;

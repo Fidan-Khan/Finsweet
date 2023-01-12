@@ -282,11 +282,21 @@ dl, ol, ul, li {
   padding-block: 128px;
   gap: 144px;
 }
+@media (max-width: 1098px) {
+  .category-posts__content {
+    flex-direction: column;
+  }
+}
 .category-posts__content .category-left {
   gap: 32px;
 }
 .category-posts__content .category-left .post-content {
   gap: 32px;
+}
+@media (max-width: 780px) {
+  .category-posts__content .category-left .post-content {
+    flex-direction: column;
+  }
 }
 .category-posts__content .category-left .post-content img {
   width: 100%;
@@ -350,6 +360,11 @@ dl, ol, ul, li {
   line-height: 1.43;
   letter-spacing: -1px;
   color: var(--main-color);
+}
+@media (max-width: 1098px) {
+  .category-posts__content .category-right .categories ul li {
+    max-width: 100%;
+  }
 }
 .category-posts__content .category-right .tags {
   gap: 24px;
