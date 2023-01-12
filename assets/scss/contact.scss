@@ -173,7 +173,7 @@
         width: 100%;
         max-width: 768px;
 
-        input, datalist, textarea {
+        input, select, textarea {
             width: 100%;
             max-width: 768px;
             height: 76px;
@@ -183,7 +183,14 @@
             font-size: 16px;
             line-height: 1.75;
             text-align: left;
-            color: var(--main-color);
+
+            &::selection {
+                background-color: var(--accent-color);
+            }
+
+            &::placeholder {
+                color: var(--main-color);
+            }
         }
 
         textarea {

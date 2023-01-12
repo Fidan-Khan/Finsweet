@@ -325,7 +325,7 @@ dl, ol, ul, li {
   width: 100%;
   max-width: 768px;
 }
-.contact form input, .contact form datalist, .contact form textarea {
+.contact form input, .contact form select, .contact form textarea {
   width: 100%;
   max-width: 768px;
   height: 76px;
@@ -335,6 +335,20 @@ dl, ol, ul, li {
   font-size: 16px;
   line-height: 1.75;
   text-align: left;
+}
+.contact form input::-moz-selection, .contact form select::-moz-selection, .contact form textarea::-moz-selection {
+  background-color: var(--accent-color);
+}
+.contact form input::selection, .contact form select::selection, .contact form textarea::selection {
+  background-color: var(--accent-color);
+}
+.contact form input::-moz-placeholder, .contact form select::-moz-placeholder, .contact form textarea::-moz-placeholder {
+  color: var(--main-color);
+}
+.contact form input:-ms-input-placeholder, .contact form select:-ms-input-placeholder, .contact form textarea:-ms-input-placeholder {
+  color: var(--main-color);
+}
+.contact form input::placeholder, .contact form select::placeholder, .contact form textarea::placeholder {
   color: var(--main-color);
 }
 .contact form textarea {
