@@ -183,9 +183,15 @@
             font-size: 16px;
             line-height: 1.75;
             text-align: left;
+            background-color: transparent;
 
             &::selection {
                 background-color: var(--accent-color);
+            }
+
+            &::-moz-placeholder {
+                color: var(--main-color);
+                opacity: 1;
             }
 
             &::placeholder {
