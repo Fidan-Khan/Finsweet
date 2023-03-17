@@ -5,7 +5,6 @@ const navLink = document.querySelectorAll('.menu__link');
 btnHamburger.addEventListener('click', () => {
     btnHamburger.classList.toggle('open');
     nav.classList.toggle('active');
-
 });
 
 navLink.forEach(item => item.addEventListener('click', () => {
@@ -42,7 +41,6 @@ document.getElementById('slider__button--prev').addEventListener("click", functi
 function updateSlidePosition() {
   for (let slide of slides) {
     slide.classList.remove('slider__item--visible');
-    slide.classList.add('slider__item--hidden');
   }
 
   slides[slidePosition].classList.add('slider__item--visible');
